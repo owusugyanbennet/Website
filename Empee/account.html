@@ -11,52 +11,43 @@
     <div class="header">
         <div class="container">
             <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" width="125px">
-            </div>
-
-            <h1>
-                <span>
-                   EMPEE COLLECTIONS
-
-                </span>
-                 EMPEE COLLECTIONS
-            </h1>
-
-                <header>
-                    <section>
-                       <div id="logo">EMPEE COLLECTIONS</div>
-                    <nav>
-                       <a href='index.html'>HOME</a>
-                       <a href="product.html">PRODUCT</a>
-                       <a href="about.html">ABOUT</a>
-                       <a href="contact.html">CONTACT</a>
-                       <a href="account.html">ACCOUNT</a>
-                       
-                    </nav>
-                    </section>
-                  </header>
-            </nav>
-
-                
-
-            </div>    
-            </div>
+                <div class="logo">
+                    <img src="images/Untitled-1.png" width="125px">
+                </div>
+                <h1>
+                    <span>
+                        Empee Collection
+                    </span>
+                </h1>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li> 
+                    </ul>
+                </nav>
+                    <img src="images/logo.png" width="30px" height="30px">
+                    <img src="images/icons8-menu-28.png" class="menu-icon" onclick="menutoggle()">
+            </div>     
             </div>
             </div>
            
+           
             <div class="container">
-                <h1>Register</h1>
+                <h1 class="title">Register</h1>
+                
                 <form>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-                    
+                   <br><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    
+                    <br><br>
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
-                    
+                    <br><br>
                     <label for="confirm-password">Confirm Password:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
                     
@@ -65,12 +56,76 @@
             </div>
               
                   
-                    
+             <!--------- Brands ------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-5">
+                <img src="images/vodafone-png-logo-8410.png">
+                </div>
+                 <div class="col-5">
+                <img src="images/favpng_brand-logo-trademark-product-design.png">
+                </div>
+                 <div class="col-5">
+                <img src="images/insta.png">
+                </div>
+                <div class="col-5">
+                <img src="images/Badge_2.png">
+                </div>
+            </div>
+            </div>
+        </div>        
        
                      
                     
-  </body>
-</html>
+    <!-------- footer ------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                <img src="images/Untitled-1.png">
+                    <p>Ours is to make marketing easy for everybody in the world</p>
+                
+                </div>
+            <div class="footer-col-2">
+                <h3>USEFUL LINK</h3>
+                <ul>
+                <li>Coupons</li>
+                <li>Bolg Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+                    
+                </ul>
+                </div>
+                <div class="footer-col-3">
+                <h3>FOLLOW US</h3>
+                <a href="#"><img src="images/fb.jfif"width="40px"</a><br><br>
+                <a href="#"><img src="images/insta.png"width="40px"</a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> &copy; Copyright 2022 - Empee Collections</p>
+            </div>
+        </div>
+
+
+        <!----------js for toggle menu--------->
+        <script>
+        var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+            }
+        </script>
 
     
 </body>
